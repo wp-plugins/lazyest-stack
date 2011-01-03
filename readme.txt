@@ -1,4 +1,4 @@
-=== Lazyest Stack ===
+﻿=== Lazyest Stack ===
 Contributors: macbrink
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=1257529
 Tags: image,gallery,stacked,css3,jquery,lazyest
@@ -10,6 +10,8 @@ This plugin adds a beautiful photo stack gallery with jQuery and CSS3 to Lazyest
 == Description ==
 
 Based on [Beautiful Photo Stack Gallery with jQuery and CSS3](http://tympanus.net/codrops/2010/06/27/beautiful-photo-stack-gallery-with-jquery-and-css3/) 
+
+This plugin requires [Lazyest Gallery](http://wordpress.org/extend/plugins/lazyest-gallery/) version 1.0 or higher.
 
 The plugin shows the albums as a slider, and when an album is chosen, it shows the images of that album as a photo stack. In the photo stack view, you can browse through the images by putting the top most image behind all the stack with a slick animation.
 
