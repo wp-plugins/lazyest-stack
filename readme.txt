@@ -22,7 +22,7 @@ The plugin uses jQuery and CSS3 properties for the rotated image effect. It also
 
 0. Install and configure [Lazyest Gallery](http://wordpress.org/extend/plugins/lazyest-gallery/)
 1. Upload the contents of the zip file to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
+2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Add the `[lg_stack]` shortcode to a page to show your Lazyest Gallery as a Photo Stack
 
 == Frequently Asked Questions ==
@@ -44,8 +44,6 @@ You don't need to upgrade
 == Screenshots ==
 
 1. The stacked photo album
-
-For more info, see the [Stacked Plugin Demo](http://brimosoft.nl/stacked/) 
 
 == License ==
 * Copyright (c) 2011 - Marcel Brinkkemper 
