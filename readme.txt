@@ -5,6 +5,7 @@ Tags: image,gallery,stacked,css3,jquery,lazyest
 Requires at least: 2.9
 Tested up to: 3.1
 Stable tag: 1.0
+
 This plugin adds a beautiful photo stack gallery with jQuery and CSS3 to Lazyest Gallery.
 
 == Description ==
