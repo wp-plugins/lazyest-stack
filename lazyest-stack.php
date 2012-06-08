@@ -3,10 +3,10 @@
 Plugin Name: Lazyest Stack
 Plugin URI: http://brimosoft.nl/lazyest/stack
 Description: Beautiful Photo Stack Gallery with jQuery and CSS3. Requires Lazyest Gallery 1.0.0 or higher
-Date: 2011, January
+Date: 2012, June
 Author: Brimosoft
 Author URI: http://brimosoft.nl/
-Version: 1.0
+Version: 1.1
 Text Domain: lazyest-stack
 License: GNU GPL 
 */
@@ -89,7 +89,7 @@ class LazyestStack {
    * @return void
    */
   function scripts() {
-    wp_register_script( 'lg_stack', $this->plugin_url . '/js/lazyest-stack.js', array( 'jquery' ), '0.1', true );
+    wp_register_script( 'lg_stack', $this->plugin_url . '/js/lazyest-stack.js', array( 'jquery' ), '1.1', true );
     wp_enqueue_script( 'lg_stack' );
     wp_localize_script( 'lg_stack', 'lg_stack', $this->localize_script() );
   }
@@ -260,5 +260,24 @@ class LazyestStack {
  * @global $lg_stack 
  * the Lazyest Stack object
  */
-$lg_stack = new LazyestStack();
+global $lg_stack;
+
+/**
+ * lazyest_stack()
+ * Do not start Lazyest Stack if the Lazyest Gallery plugin is not active
+ * @return void
+ */ 
+function lazyest_stack() {
+	global $lg_stack;
+	include_once( ABSPATH . 'wp-admin/includes/plugin.php' ); 
+	if ( is_plugin_active( 'lazyest-gallery/lazyest-gallery.php' ) )
+		$lg_stack = new LazyestStack;
+	else 
+		if ( is_admin() ) {
+			deactivate_plugins( __FILE__ );
+			wp_redirect( admin_url('plugins.php?deactivate=true') );
+			exit;
+		}	
+}
+add_action( 'init', 'lazyest_stack' );
 ?>
