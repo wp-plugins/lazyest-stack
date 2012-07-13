@@ -6,7 +6,7 @@ Description: Beautiful Photo Stack Gallery with jQuery and CSS3. Requires Lazyes
 Date: 2012, June
 Author: Brimosoft
 Author URI: http://brimosoft.nl/
-Version: 1.1
+Version: 1.1.1
 Text Domain: lazyest-stack
 License: GNU GPL 
 */
@@ -22,7 +22,7 @@ Copyright (C) 2008-2010 Marcel Brinkkemper
  * The Functionality to incorporate the Photo Stack Gallery into Lazyest Gallery
  * 
  * @package Lazyest Gallery 
- * @version 1.0
+ * @version 1.1
  * @author Marcel Brinkkemper (lazyest@brimosoft.nl)
  * @copyright 2011 Marcel Brinkkemper 
  * @license GNU GPL
@@ -272,12 +272,6 @@ function lazyest_stack() {
 	include_once( ABSPATH . 'wp-admin/includes/plugin.php' ); 
 	if ( is_plugin_active( 'lazyest-gallery/lazyest-gallery.php' ) )
 		$lg_stack = new LazyestStack;
-	else 
-		if ( is_admin() ) {
-			deactivate_plugins( __FILE__ );
-			wp_redirect( admin_url('plugins.php?deactivate=true') );
-			exit;
-		}	
 }
 add_action( 'init', 'lazyest_stack' );
 ?>

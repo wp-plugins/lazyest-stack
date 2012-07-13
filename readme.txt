@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: image,gallery,stacked,css3,jquery,lazyest
 Requires at least: 2.9
 Tested up to: 3.4
-Stable tag: 1.1
+Stable tag: 1.1.1
 
 This plugin adds a beautiful photo stack gallery with jQuery and CSS3 to Lazyest Gallery.
 
@@ -33,6 +33,9 @@ You need at least Lazyest Gallery version 1.0
 
 == Changelog ==
 
+= 1.1.1 =
+* Bug Fix: Do not deactivate on update cycle
+
 = 1.1 =
 * Bug fix: jQuery reference
 * Changed: Compresssed javascript
@@ -43,8 +46,8 @@ You need at least Lazyest Gallery version 1.0
 
 == Upgrade Notice ==
 
-= 1.1 =
-* Tested on WordPress 3.4
+= 1.1.1 =
+* Fixed a bug where Lazyest Stack gets deactivated on an update of Lazyest Gallery
 
 == Screenshots ==
 
