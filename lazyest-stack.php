@@ -3,10 +3,10 @@
 Plugin Name: Lazyest Stack
 Plugin URI: http://brimosoft.nl/lazyest/stack
 Description: Beautiful Photo Stack Gallery with jQuery and CSS3. Requires Lazyest Gallery 1.0.0 or higher
-Date: 2012, June
+Date: 2012, December
 Author: Brimosoft
 Author URI: http://brimosoft.nl/
-Version: 1.1.1
+Version: 1.1.2
 Text Domain: lazyest-stack
 License: GNU GPL 
 */
@@ -29,16 +29,6 @@ Copyright (C) 2008-2010 Marcel Brinkkemper
  * @link http://brimosoft.nl/lazyest/stack/
  */
 class LazyestStack {
-  
-  /**
-   * LazyestStack::LazyestStack()
-   * PHP4 wrapper for constructor
-   * 
-   * @return void
-   */
-  function LazyestStack() {
-    $this->__construct();
-  }
   
   /**
    * LazyestStack::__construct()
